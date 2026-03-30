@@ -41,13 +41,18 @@
 }
 
 .nav__link {
-  color: rgba(255, 255, 255, 0.55);
+  color: rgba(255, 255, 255, 0.45);
   transition: color var(--transition-fast);
+  font-weight: 700;
+  letter-spacing: 0.15em;
 }
 
-.nav__link:hover,
-.nav__link--active {
+.nav__link:hover {
   color: var(--color-white);
+}
+
+.nav__link--active {
+  color: var(--color-pink);
 }
 
 .nav__logo {
@@ -183,9 +188,9 @@
   background-color: var(--color-pink);
   color: var(--color-white);
 }
-.section--pink .overline { color: rgba(255, 255, 255, 0.6); }
+.section--pink .overline { color: rgba(255, 255, 255, 0.7); }
 .section--pink h2, .section--pink h3 { color: var(--color-white); }
-.section--pink p { color: rgba(255, 255, 255, 0.8); }
+.section--pink p { color: rgba(255, 255, 255, 0.9); }
 
 .section--dark {
   background-color: var(--color-ink);
@@ -281,9 +286,11 @@
 
 .footer__brand {
   font-family: var(--font-display);
-  font-size: 0.9375rem;
+  font-size: 1.125rem;
   font-weight: 700;
   color: var(--color-pink);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
   margin-bottom: var(--space-xs);
 }
 
