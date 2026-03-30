@@ -1,0 +1,68 @@
+:root {
+  /* Colors */
+  --color-pink: #e84da0;
+  --color-pink-hover: #d63384;
+  --color-blush: #fef7fa;
+  --color-white: #ffffff;
+  --color-ink: #1a1a2e;
+  --color-slate: #6b7280;
+  --color-pink-border: #fce4ef;
+  --color-pink-shadow: rgba(232, 77, 160, 0.08);
+
+  /* Typography — sizes in rem (base 16px) */
+  --font-display: 'Clash Display', system-ui, sans-serif;
+  --font-body: 'General Sans', system-ui, sans-serif;
+
+  --text-hero: clamp(2.5rem, 5vw, 3.5rem);
+  --text-section: clamp(1.75rem, 3vw, 2rem);
+  --text-sub: clamp(1.125rem, 2vw, 1.25rem);
+  --text-body: clamp(0.9375rem, 1.5vw, 1.0625rem);
+  --text-small: 0.8125rem;
+  --text-label: 0.6875rem;
+
+  --leading-tight: 1.0;
+  --leading-snug: 1.15;
+  --leading-normal: 1.7;
+
+  --tracking-tight: -0.094rem;
+  --tracking-normal: 0;
+  --tracking-wide: 0.0625rem;
+  --tracking-wider: 0.125rem;
+  --tracking-widest: 0.25rem;
+
+  /* Spacing scale */
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 3.75rem;
+  --space-4xl: 4.5rem;
+
+  /* Layout */
+  --container-max: 72rem;
+  --container-padding: 2.5rem;
+
+  /* Borders */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 1rem;
+  --radius-full: 9999px;
+
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-normal: 200ms ease;
+  --transition-slow: 400ms ease;
+
+  /* Shadows */
+  --shadow-card: 0 0.125rem 0.75rem var(--color-pink-shadow);
+  --shadow-photo: 0 0.5rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive container padding */
+@media (max-width: 768px) {
+  :root {
+    --container-padding: 1.25rem;
+  }
+}
