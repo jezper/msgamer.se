@@ -189,6 +189,15 @@
   .portfolio-strip__track {
     flex-wrap: wrap;
   }
+
+  /* Hide the JS-cloned marquee duplicate on mobile */
+  .marquee__content[aria-hidden="true"] {
+    display: none;
+  }
+
+  .marquee__content {
+    animation: none;
+  }
 }
 
 /* ========================================
