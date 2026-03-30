@@ -73,6 +73,7 @@
   position: absolute;
   border-radius: var(--radius-full);
   pointer-events: none;
+  background-color: currentColor;
 }
 
 .deco-circle--drift {
