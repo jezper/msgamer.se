@@ -1,0 +1,14 @@
+{
+  "name": "msgamer",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Portfolio site for Paulina Lorné — MsGamer",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^6.0.0"
+  }
+}
