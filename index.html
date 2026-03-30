@@ -3,15 +3,357 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MsGamer — Paulina Lorné</title>
+
+  <!-- SEO -->
+  <title>MsGamer — Paulina Lorné | Nordic Marketing Manager, Bethesda</title>
+  <meta name="description" content="Paulina Lorné is a Nordic Marketing Manager at Bethesda with a lifelong passion for gaming. Gamer since '85, marketer behind AAA launches like Fallout, Starfield, DOOM, and more.">
+  <link rel="canonical" href="https://msgamer.se/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="MsGamer — Paulina Lorné | Nordic Marketing Manager, Bethesda">
+  <meta property="og:description" content="Paulina Lorné is a Nordic Marketing Manager at Bethesda with a lifelong passion for gaming. Gamer since '85, marketer behind AAA launches like Fallout, Starfield, DOOM, and more.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://msgamer.se/">
+  <meta property="og:image" content="https://msgamer.se/images/og-image.jpg">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="MsGamer — Paulina Lorné | Nordic Marketing Manager, Bethesda">
+  <meta name="twitter:description" content="Paulina Lorné is a Nordic Marketing Manager at Bethesda with a lifelong passion for gaming. Gamer since '85.">
+  <meta name="twitter:image" content="https://msgamer.se/images/og-image.jpg">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://api.fontshare.com">
+  <link href="https://api.fontshare.com/v2/css?f[]=clash-display@600,700&f[]=general-sans@400,500,600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="/css/reset.css">
   <link rel="stylesheet" href="/css/tokens.css">
   <link rel="stylesheet" href="/css/base.css">
-  <link href="https://api.fontshare.com/v2/css?f[]=clash-display@600,700&f[]=general-sans@400,500,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/layout.css">
+  <link rel="stylesheet" href="/css/components.css">
+  <link rel="stylesheet" href="/css/animations.css">
+
+  <!-- JSON-LD Person Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Paulina Lorné",
+    "alternateName": "MsGamer",
+    "jobTitle": "Nordic Marketing Manager",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Bethesda Softworks"
+    },
+    "url": "https://msgamer.se/",
+    "sameAs": [
+      "https://se.linkedin.com/in/paulinalorne",
+      "https://twitter.com/MsGamerSE"
+    ]
+  }
+  </script>
 </head>
 <body>
-  <h1>MsGamer</h1>
-  <p class="overline">Design tokens loaded</p>
-  <p>Body text in General Sans with slate color.</p>
+
+  <!-- ====================================================
+       NAV
+  ===================================================== -->
+  <nav class="nav" aria-label="Main navigation">
+    <div class="nav__inner">
+
+      <ul class="nav__links-left" role="list">
+        <li><a href="/" class="nav__link nav__link--active">Home</a></li>
+        <li><a href="/about.html" class="nav__link">About</a></li>
+        <li><a href="/career.html" class="nav__link">Career</a></li>
+      </ul>
+
+      <a href="/" class="nav__logo" aria-label="MsGamer home">
+        <img src="/images/logo.png" alt="MsGamer" width="120" height="40">
+      </a>
+
+      <div class="nav__links-right">
+        <ul role="list">
+          <li><a href="/press.html" class="nav__link">Press</a></li>
+          <li><a href="/contact.html" class="nav__link">Contact</a></li>
+        </ul>
+        <div class="nav__social">
+          <a href="https://se.linkedin.com/in/paulinalorne" class="social-icon social-icon--linkedin" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+          </a>
+          <a href="https://twitter.com/MsGamerSE" class="social-icon social-icon--x-dark" target="_blank" rel="noopener" aria-label="X (Twitter)">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.737-8.835L1.254 2.25H8.08l4.256 5.625 5.908-5.625zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <button class="nav__hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span class="nav__hamburger-icon" aria-hidden="true"></span>
+      </button>
+
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="nav__mobile-menu" id="mobile-menu" aria-hidden="true">
+      <ul role="list">
+        <li><a href="/" class="nav__link nav__link--active">Home</a></li>
+        <li><a href="/about.html" class="nav__link">About</a></li>
+        <li><a href="/career.html" class="nav__link">Career</a></li>
+        <li><a href="/press.html" class="nav__link">Press</a></li>
+        <li><a href="/contact.html" class="nav__link">Contact</a></li>
+      </ul>
+      <div class="nav__social">
+        <a href="https://se.linkedin.com/in/paulinalorne" class="social-icon social-icon--linkedin" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+          </svg>
+        </a>
+        <a href="https://twitter.com/MsGamerSE" class="social-icon social-icon--x-dark" target="_blank" rel="noopener" aria-label="X (Twitter)">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.737-8.835L1.254 2.25H8.08l4.256 5.625 5.908-5.625zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ====================================================
+       MAIN CONTENT
+  ===================================================== -->
+  <main>
+
+    <!-- ================================================
+         HERO
+    ================================================= -->
+    <section class="section section--pink" aria-label="Hero">
+      <div class="deco-circle deco-circle--drift" style="width:320px;height:320px;top:-80px;right:-60px;opacity:0.15;" aria-hidden="true"></div>
+      <div class="deco-circle deco-circle--drift" style="width:180px;height:180px;bottom:40px;left:-40px;opacity:0.1;animation-delay:-3s;" aria-hidden="true"></div>
+
+      <div class="section__inner hero__content reveal-stagger">
+
+        <!-- Left column -->
+        <div>
+          <p class="overline reveal">Nordic Marketing Manager &bull; Bethesda</p>
+          <h1 class="reveal">Marketing leader.<br>Gamer since&nbsp;'85.</h1>
+          <p class="reveal" style="max-width:46ch;margin-block:1.5rem 2rem;">
+            I've spent decades building communities, launching AAA titles across the Nordics, and proving that passion-driven marketing moves the needle. From Fallout to Starfield — I bring the games to the people.
+          </p>
+          <div class="reveal" style="display:flex;gap:1rem;flex-wrap:wrap;">
+            <a href="/career.html" class="btn btn--primary-inverted">See my career</a>
+            <a href="/contact.html" class="btn btn--secondary-inverted">Get in touch</a>
+          </div>
+        </div>
+
+        <!-- Right column -->
+        <div style="display:flex;justify-content:center;align-items:center;position:relative;">
+          <div class="hero__photo-frame reveal" style="position:relative;display:inline-block;">
+            <img
+              src="/images/paulina-placeholder.gif"
+              alt="Paulina Lorné — MsGamer"
+              width="260"
+              height="260"
+              style="width:260px;height:260px;object-fit:cover;border-radius:1.25rem;display:block;"
+            >
+            <div
+              aria-label="Gamer since 1985"
+              style="position:absolute;bottom:-16px;right:-16px;background:#fff;color:#e84da0;font-weight:700;font-size:0.75rem;letter-spacing:0.08em;padding:0.5rem 0.875rem;border-radius:999px;box-shadow:0 4px 16px rgba(0,0,0,0.15);text-transform:uppercase;"
+            >
+              Since '85
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================================================
+         PORTFOLIO STRIP
+    ================================================= -->
+    <section class="section section--white portfolio-strip" aria-label="Portfolio brands">
+      <div class="portfolio-strip__inner">
+        <span class="portfolio-strip__label overline">Portfolio</span>
+        <div class="portfolio-strip__track marquee" aria-label="Brands: Fallout, Starfield, The Elder Scrolls, Indiana Jones, DOOM, Deathloop, SteamWorld, Wolfenstein">
+          <div class="marquee__content" aria-hidden="true">
+            <span class="portfolio-strip__brand">Fallout</span>
+            <span class="portfolio-strip__dot" aria-hidden="true">&bull;</span>
+            <span class="portfolio-strip__brand">Starfield</span>
+            <span class="portfolio-strip__dot" aria-hidden="true">&bull;</span>
+            <span class="portfolio-strip__brand">The Elder Scrolls</span>
+            <span class="portfolio-strip__dot" aria-hidden="true">&bull;</span>
+            <span class="portfolio-strip__brand">Indiana Jones</span>
+            <span class="portfolio-strip__dot" aria-hidden="true">&bull;</span>
+            <span class="portfolio-strip__brand">DOOM</span>
+            <span class="portfolio-strip__dot" aria-hidden="true">&bull;</span>
+            <span class="portfolio-strip__brand">Deathloop</span>
+            <span class="portfolio-strip__dot" aria-hidden="true">&bull;</span>
+            <span class="portfolio-strip__brand">SteamWorld</span>
+            <span class="portfolio-strip__dot" aria-hidden="true">&bull;</span>
+            <span class="portfolio-strip__brand">Wolfenstein</span>
+            <span class="portfolio-strip__dot" aria-hidden="true">&bull;</span>
+          </div>
+          <!-- Duplicate for seamless loop -->
+          <div class="marquee__content" aria-hidden="true">
+            <span class="portfolio-strip__brand">Fallout</span>
+            <span class="portfolio-strip__dot">&bull;</span>
+            <span class="portfolio-strip__brand">Starfield</span>
+            <span class="portfolio-strip__dot">&bull;</span>
+            <span class="portfolio-strip__brand">The Elder Scrolls</span>
+            <span class="portfolio-strip__dot">&bull;</span>
+            <span class="portfolio-strip__brand">Indiana Jones</span>
+            <span class="portfolio-strip__dot">&bull;</span>
+            <span class="portfolio-strip__brand">DOOM</span>
+            <span class="portfolio-strip__dot">&bull;</span>
+            <span class="portfolio-strip__brand">Deathloop</span>
+            <span class="portfolio-strip__dot">&bull;</span>
+            <span class="portfolio-strip__brand">SteamWorld</span>
+            <span class="portfolio-strip__dot">&bull;</span>
+            <span class="portfolio-strip__brand">Wolfenstein</span>
+            <span class="portfolio-strip__dot">&bull;</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================
+         CAREER SNAPSHOT
+    ================================================= -->
+    <section class="section section--blush reveal" aria-labelledby="career-heading">
+      <div class="section__inner">
+        <h2 id="career-heading" class="reveal">From community volunteer to AAA launches.</h2>
+        <div class="card-grid reveal-stagger" style="margin-block:2.5rem;">
+
+          <article class="career-card career-card--featured reveal">
+            <p class="career-card__date overline">2021 – Present</p>
+            <h3 class="career-card__company">Bethesda</h3>
+            <p class="career-card__role">Nordic Marketing Manager</p>
+            <p>Leading marketing strategy across the Nordic region for one of gaming's most iconic publishers — driving launches for Starfield, Indiana Jones, and more.</p>
+          </article>
+
+          <article class="career-card reveal">
+            <p class="career-card__date overline">2019 – 2021</p>
+            <h3 class="career-card__company">Thunderful</h3>
+            <p class="career-card__role">Marketing Manager</p>
+            <p>Oversaw marketing for a portfolio of indie and mid-tier titles, building brand awareness and managing community-driven campaigns.</p>
+          </article>
+
+          <article class="career-card reveal">
+            <p class="career-card__date overline">2016 – 2019</p>
+            <h3 class="career-card__company">Tobii / Image &amp; Form</h3>
+            <p class="career-card__role">Marketing &amp; Community</p>
+            <p>Started in eye-tracking technology with Tobii, then pivoted into game marketing and community management at Image &amp; Form (now Thunderful).</p>
+          </article>
+
+        </div>
+        <a href="/career.html" class="text-link reveal">View full career &rarr;</a>
+      </div>
+    </section>
+
+    <!-- ================================================
+         GAMING ROOTS TEASER
+    ================================================= -->
+    <section class="section section--pink reveal" aria-labelledby="roots-heading">
+      <div class="section__inner" style="display:grid;grid-template-columns:1fr auto;gap:3rem;align-items:center;">
+        <div>
+          <blockquote class="reveal" style="font-size:clamp(1.25rem,3vw,1.75rem);font-weight:600;font-family:var(--font-heading);line-height:1.3;margin-bottom:1.25rem;">
+            "Gaming isn't what I do — it's who I am."
+          </blockquote>
+          <h2 id="roots-heading" class="reveal" style="margin-bottom:1rem;">A career built on a childhood obsession.</h2>
+          <p class="reveal" style="max-width:50ch;margin-bottom:1.75rem;">
+            Before the job titles and the launch events, there were countless hours with a controller in hand. My roots in gaming inform everything I do as a marketer — because I'm always the player first.
+          </p>
+          <a href="/about.html" class="text-link text-link--inverted reveal">Read more &rarr;</a>
+        </div>
+        <div class="reveal" aria-hidden="true" style="font-size:5rem;line-height:1;">
+          🎮
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================
+         FEATURED IN (PRESS TEASER)
+    ================================================= -->
+    <section class="section section--white reveal" aria-labelledby="press-heading">
+      <div class="section__inner">
+        <p class="overline reveal">Featured In</p>
+        <h2 id="press-heading" class="reveal">As seen &amp; heard.</h2>
+        <div class="press-grid reveal-stagger" style="margin-block:2.5rem;">
+
+          <article class="press-card reveal">
+            <p class="press-card__name">P3 Spel</p>
+            <p class="press-card__type overline">Radio / Podcast</p>
+            <p>Discussing women in gaming and Nordic gaming culture on Sweden's leading gaming radio programme.</p>
+          </article>
+
+          <article class="press-card reveal">
+            <p class="press-card__name">PAX East</p>
+            <p class="press-card__type overline">Conference</p>
+            <p>Representing Bethesda and speaking on marketing strategy at one of the world's biggest gaming conventions.</p>
+          </article>
+
+          <article class="press-card reveal">
+            <p class="press-card__name">Gamescom</p>
+            <p class="press-card__type overline">Event</p>
+            <p>On the ground at Europe's largest gaming trade show — connecting press, community, and campaigns.</p>
+          </article>
+
+        </div>
+        <a href="/press.html" class="text-link reveal">See all press &rarr;</a>
+      </div>
+    </section>
+
+    <!-- ================================================
+         CTA STRIP
+    ================================================= -->
+    <section class="section section--pink cta-strip reveal" aria-label="Contact call to action">
+      <div class="section__inner" style="text-align:center;">
+        <h2 class="reveal">Get in touch.</h2>
+        <p class="reveal" style="margin-block:1rem 2rem;max-width:40ch;margin-inline:auto;">
+          Whether you're looking for a collaborator, a speaker, or just want to talk games — I'd love to hear from you.
+        </p>
+        <a href="/contact.html" class="btn btn--primary-inverted reveal">Contact me</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ====================================================
+       FOOTER
+  ===================================================== -->
+  <footer class="footer" aria-label="Site footer">
+    <div class="footer__inner">
+
+      <p class="footer__brand">MSGAMER</p>
+
+      <nav class="footer__links" aria-label="Footer navigation">
+        <a href="/" class="nav__link">Home</a>
+        <a href="/about.html" class="nav__link">About</a>
+        <a href="/career.html" class="nav__link">Career</a>
+        <a href="/press.html" class="nav__link">Press</a>
+        <a href="/contact.html" class="nav__link">Contact</a>
+      </nav>
+
+      <p class="footer__copyright">&copy; <span id="footer-year">2025</span> Paulina Lorné. All rights reserved.</p>
+
+      <div class="footer__social">
+        <a href="https://se.linkedin.com/in/paulinalorne" class="social-icon social-icon--linkedin social-icon--lg" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+          </svg>
+        </a>
+        <a href="https://twitter.com/MsGamerSE" class="social-icon social-icon--x-dark social-icon--lg" target="_blank" rel="noopener" aria-label="X (Twitter)">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.737-8.835L1.254 2.25H8.08l4.256 5.625 5.908-5.625zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+          </svg>
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+  <script type="module" src="/js/main.js"></script>
 </body>
 </html>
