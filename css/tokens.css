@@ -13,12 +13,12 @@
   --font-display: 'Clash Display', system-ui, sans-serif;
   --font-body: 'General Sans', system-ui, sans-serif;
 
-  --text-hero: clamp(2.5rem, 5vw, 3.5rem);
-  --text-section: clamp(1.75rem, 3vw, 2rem);
-  --text-sub: clamp(1.125rem, 2vw, 1.25rem);
-  --text-body: clamp(0.9375rem, 1.5vw, 1.0625rem);
-  --text-small: 0.8125rem;
-  --text-label: 0.6875rem;
+  --text-hero: clamp(3rem, 6vw, 4.5rem);
+  --text-section: clamp(2rem, 3.5vw, 2.5rem);
+  --text-sub: clamp(1.25rem, 2.5vw, 1.5rem);
+  --text-body: clamp(1rem, 1.5vw, 1.125rem);
+  --text-small: 0.875rem;
+  --text-label: 0.75rem;
 
   --leading-tight: 1.0;
   --leading-snug: 1.15;
@@ -37,8 +37,8 @@
   --space-lg: 1.5rem;
   --space-xl: 2rem;
   --space-2xl: 3rem;
-  --space-3xl: 3.75rem;
-  --space-4xl: 4.5rem;
+  --space-3xl: 5rem;
+  --space-4xl: 6rem;
 
   /* Layout */
   --container-max: 72rem;

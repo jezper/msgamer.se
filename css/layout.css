@@ -144,16 +144,16 @@
 }
 
 .social-icon--linkedin {
-  background-color: var(--color-pink);
-  color: var(--color-white);
-}
-
-.social-icon--x-dark {
   background-color: rgba(255, 255, 255, 0.08);
   color: rgba(255, 255, 255, 0.6);
 }
 
-.social-icon--x-light {
+.social-icon--bluesky-dark {
+  background-color: rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.social-icon--bluesky-light {
   background-color: var(--color-blush);
   color: var(--color-pink);
 }
@@ -198,8 +198,8 @@
 
 .hero__content {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 4rem;
   align-items: center;
 }
 
