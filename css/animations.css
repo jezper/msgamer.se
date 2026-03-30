@@ -1,0 +1,148 @@
+/* ========================================
+   SCROLL REVEAL ANIMATIONS
+   ======================================== */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(1.25rem);
+  transition: opacity var(--transition-slow), transform var(--transition-slow);
+}
+
+.reveal--visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Staggered children — add to parent, children get delays */
+.reveal-stagger > .reveal:nth-child(1) { transition-delay: 0ms; }
+.reveal-stagger > .reveal:nth-child(2) { transition-delay: 100ms; }
+.reveal-stagger > .reveal:nth-child(3) { transition-delay: 200ms; }
+.reveal-stagger > .reveal:nth-child(4) { transition-delay: 300ms; }
+.reveal-stagger > .reveal:nth-child(5) { transition-delay: 400ms; }
+
+/* Hero-specific stagger (loads on page load, not scroll) */
+.hero__content > * {
+  opacity: 0;
+  transform: translateY(1rem);
+  animation: hero-fade-in 0.6s ease forwards;
+}
+
+.hero__content > *:nth-child(1) { animation-delay: 0ms; }
+.hero__content > *:nth-child(2) { animation-delay: 100ms; }
+.hero__content > *:nth-child(3) { animation-delay: 200ms; }
+.hero__content > *:nth-child(4) { animation-delay: 300ms; }
+
+@keyframes hero-fade-in {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ========================================
+   PORTFOLIO MARQUEE
+   ======================================== */
+
+.marquee {
+  display: flex;
+  overflow: hidden;
+}
+
+.marquee__content {
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+  animation: marquee-scroll 30s linear infinite;
+  white-space: nowrap;
+}
+
+.marquee:hover .marquee__content {
+  animation-play-state: paused;
+}
+
+@keyframes marquee-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* ========================================
+   DECORATIVE CIRCLES (slow drift)
+   ======================================== */
+
+.deco-circle {
+  position: absolute;
+  border-radius: var(--radius-full);
+  pointer-events: none;
+}
+
+.deco-circle--drift {
+  animation: slow-drift 35s ease-in-out infinite alternate;
+}
+
+@keyframes slow-drift {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(1rem, -0.75rem); }
+}
+
+/* ========================================
+   TIMELINE DRAW (career page)
+   ======================================== */
+
+.timeline--animated::before {
+  transform-origin: top;
+  transform: scaleY(0);
+  transition: transform 1.5s ease;
+}
+
+.timeline--animated.timeline--visible::before {
+  transform: scaleY(1);
+}
+
+/* ========================================
+   PHOTO PULSE
+   ======================================== */
+
+.hero__photo-frame {
+  animation: photo-pulse 2s ease-in-out;
+}
+
+@keyframes photo-pulse {
+  0% { border-color: rgba(255, 255, 255, 0.2); }
+  50% { border-color: rgba(255, 255, 255, 0.5); }
+  100% { border-color: rgba(255, 255, 255, 0.2); }
+}
+
+/* ========================================
+   REDUCED MOTION
+   ======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .hero__content > * {
+    opacity: 1;
+    transform: none;
+    animation: none;
+  }
+
+  .marquee__content {
+    animation: none;
+  }
+
+  .deco-circle--drift {
+    animation: none;
+  }
+
+  .timeline--animated::before {
+    transform: scaleY(1);
+    transition: none;
+  }
+
+  .hero__photo-frame {
+    animation: none;
+  }
+}
