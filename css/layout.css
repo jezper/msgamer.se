@@ -41,7 +41,7 @@
 }
 
 .nav__link {
-  color: rgba(255, 255, 255, 0.45);
+  color: rgba(255, 255, 255, 0.75);
   transition: color var(--transition-fast);
   font-weight: 700;
   letter-spacing: 0.15em;
@@ -72,7 +72,9 @@
   background: none;
   border: none;
   cursor: pointer;
-  padding: 0.5rem;
+  padding: 0.75rem;
+  min-width: 2.75rem;
+  min-height: 2.75rem;
   color: var(--color-white);
 }
 
@@ -136,8 +138,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 1.875rem;
-  height: 1.875rem;
+  width: 2.75rem;
+  height: 2.75rem;
   border-radius: var(--radius-full);
   font-size: var(--text-label);
   font-weight: 700;
@@ -149,13 +151,13 @@
 }
 
 .social-icon--linkedin {
-  background-color: rgba(255, 255, 255, 0.08);
-  color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.12);
+  color: rgba(255, 255, 255, 0.85);
 }
 
 .social-icon--bluesky-dark {
-  background-color: rgba(255, 255, 255, 0.08);
-  color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.12);
+  color: rgba(255, 255, 255, 0.85);
 }
 
 .social-icon--bluesky-light {
@@ -296,7 +298,7 @@
 
 .footer__links {
   font-size: var(--text-small);
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.75);
   line-height: 1.8;
 }
 
@@ -305,12 +307,12 @@
 }
 
 .footer__links a:hover {
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--color-white);
 }
 
 .footer__copyright {
   font-size: var(--text-label);
-  color: rgba(255, 255, 255, 0.25);
+  color: rgba(255, 255, 255, 0.6);
   margin-top: var(--space-sm);
 }
 
