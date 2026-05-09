@@ -5,3 +5,6 @@ dist/
 
 # Backup of the legacy WordPress site (msgamer.se) — stored locally, not versioned
 msgamer-backup-*/
+
+# Local-only deploy credentials
+.env.local
