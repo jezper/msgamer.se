@@ -10,6 +10,7 @@ export default defineConfig({
         career: resolve(__dirname, 'career.html'),
         press: resolve(__dirname, 'press.html'),
         contact: resolve(__dirname, 'contact.html'),
+        notFound: resolve(__dirname, '404.html'),
       },
     },
   },

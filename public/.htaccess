@@ -1,0 +1,44 @@
+# MsGamer — Apache config (Loopia)
+# Notes:
+#   - HTTPS enforcement is delegated to Loopia's control panel
+#     (mod_rewrite-based force-HTTPS triggers a redirect loop on Loopia)
+#   - Compression is delegated to Loopia's server-level config
+#     (AddOutputFilterByType in .htaccess returns 500)
+
+ErrorDocument 404 /404.html
+DirectoryIndex index.html
+
+# ----- Security headers -----------------------------------------------------
+<IfModule mod_headers.c>
+  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+  Header set X-Content-Type-Options "nosniff"
+  Header set X-Frame-Options "SAMEORIGIN"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+  Header set Permissions-Policy "geolocation=(), camera=(), microphone=(), payment=()"
+
+  <FilesMatch "\.(css|js|svg|woff2?|ttf|eot|otf|jpe?g|png|gif|webp|avif|ico)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+
+  <FilesMatch "\.(html|xml|txt)$">
+    Header set Cache-Control "public, max-age=3600, must-revalidate"
+  </FilesMatch>
+</IfModule>
+
+# ----- Rewrites -------------------------------------------------------------
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # www → non-www (always over https)
+  RewriteCond %{HTTP_HOST} ^www\.msgamer\.se$ [NC]
+  RewriteRule ^(.*)$ https://msgamer.se/$1 [L,R=301]
+
+  # Strip .html from URL bar (always over https)
+  RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/(.+)\.html[\s?] [NC]
+  RewriteRule ^(.+)\.html$ https://msgamer.se/%1 [R=301,L]
+
+  # Internal rewrite to .html
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^([^.]+)$ $1.html [L]
+</IfModule>

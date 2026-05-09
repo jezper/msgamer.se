@@ -2,3 +2,6 @@ node_modules/
 dist/
 .superpowers/
 .DS_Store
+
+# Backup of the legacy WordPress site (msgamer.se) — stored locally, not versioned
+msgamer-backup-*/
