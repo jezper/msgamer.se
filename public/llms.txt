@@ -6,8 +6,8 @@
 
 - [Home](https://msgamer.se/): Overview of Paulina Lorné, her role at Bethesda, current focus areas, and gaming background.
 - [About](https://msgamer.se/about): Personal background, gaming origin story, identity as a gamer-turned-marketer, and what drives her work.
-- [Career](https://msgamer.se/career): Full career timeline from gaming community volunteer to Nordic Marketing Manager. Includes roles at Thunderful, Tobii, Image & Form, and Bethesda.
-- [Press](https://msgamer.se/press): Industry appearances and press features — E3, PAX East, Gamescom, TwitchCon, Dreamhack, P3 Spel.
+- [Career](https://msgamer.se/career): Full career timeline from indie booth builds to Nordic Marketing Manager. Includes roles at Thunderful, Tobii, Image & Form, and Bethesda.
+- [Events](https://msgamer.se/events): Industry events and appearances — Dreamhack, Gamescom, PAX East/West, E3, TwitchCon, EGX Rezzed, ID@Xbox, Retrospelsmässan.
 - [Contact](https://msgamer.se/contact): Contact information and links to LinkedIn and Bluesky.
 
 ## Key facts

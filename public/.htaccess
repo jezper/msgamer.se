@@ -37,6 +37,9 @@ DirectoryIndex index.html
   RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/(.+)\.html[\s?] [NC]
   RewriteRule ^(.+)\.html$ https://msgamer.se/%1 [R=301,L]
 
+  # Legacy /press → /events (renamed 2026-05-12)
+  RewriteRule ^press/?$ /events [R=301,L]
+
   # Internal rewrite to .html
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
