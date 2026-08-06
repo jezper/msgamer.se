@@ -57,18 +57,15 @@ Apache error log is not exposed in Loopia's kundzon. To diagnose a new 500, bise
 
 ## Architecture rules
 
+Behaviour/quality/design/a11y rules: inherited from global ~/.claude/CLAUDE.md
+
 1. Vanilla HTML/CSS/JS only — no frameworks, no build-time templating
 2. CSS custom properties for all design tokens — change once, apply everywhere
 3. Mobile-first CSS — base styles for mobile, media queries for larger screens
-4. Semantic HTML — proper heading hierarchy, landmarks, ARIA where needed
-5. All animations respect `prefers-reduced-motion`
 
 ## What NOT to do
 
 - Don't add a CSS framework (Tailwind, Bootstrap) — the design system is custom
 - Don't add a JS framework (React, Vue) — 5 static pages don't need one
-- Don't use fixed pixel font sizes for body text — always rem
-- Don't skip alt text on images
-- Don't use divs where semantic elements exist (nav, main, section, article, footer)
 - Don't link with `.html` suffix (`/about.html`) — use clean URLs (`/about`); the `.htaccess` rewrites map them to the actual files
 - Don't add the `.htaccess` directives listed in "Loopia gotchas" above — they take the live site down
