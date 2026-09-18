@@ -69,3 +69,18 @@ Behaviour/quality/design/a11y rules: inherited from global ~/.claude/CLAUDE.md
 - Don't add a JS framework (React, Vue) — 5 static pages don't need one
 - Don't link with `.html` suffix (`/about.html`) — use clean URLs (`/about`); the `.htaccess` rewrites map them to the actual files
 - Don't add the `.htaccess` directives listed in "Loopia gotchas" above — they take the live site down
+
+## Mecenats kod
+
+Behöver det här projektet läsa Mecenats repon (gomecenat, app-mecenat,
+data-platform, solr, mecenat-web ...) finns de redan på neo, i EN enda kopia:
+
+    ~/Projects/Claude/Neo/_ref/        (även `./_ref/` härifrån)
+
+**Klona aldrig om ett Mecenat-repo till det här projektet.** Läs från hyllan.
+Behöver projektet en egen gren att ändra i, skapa en arbetskopia som delar
+hyllans historik och alltså bara kostar filerna:
+
+    ~/.claude/ref.sh worktree gomecenat <gren> [målmapp]
+
+`~/.claude/ref.sh list` visar vad som finns, `~/.claude/ref.sh update` hämtar senaste.
