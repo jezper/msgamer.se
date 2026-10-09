@@ -1,5 +1,7 @@
 # MsGamer — Claude Code Context
 
+Paulina Lornés personliga sajt.
+
 ## Project overview
 
 **Problem:** Paulina Lorné's personal site (msgamer.se) is outdated and doesn't reflect her seniority as Nordic Marketing Manager at Bethesda.
