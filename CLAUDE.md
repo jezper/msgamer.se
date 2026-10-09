@@ -38,6 +38,7 @@ Live host: Loopia (Apache 2.4 + mpm-itk on FreeBSD, nginx fronting). Live URL: h
 
 1. `npm run build` — produces `dist/` (~388 KB, 17 files)
 2. Upload **everything in `dist/` including the hidden `.htaccess`** to Loopia's `public_html`. In FileZilla/Cyberduck: enable "Show hidden files" so `.htaccess` is visible.
+   Or run `python3 scripts/deploy.py`: reads `.env.local` (not committed). The FTP login covers several domains, so `DEPLOY_REMOTE_DIR=msgamer.se/public_html`, not `public_html`.
 3. Force-HTTPS is enabled in **Loopia's kundzon**, not in `.htaccess` (see gotchas below).
 
 ## Asset paths
