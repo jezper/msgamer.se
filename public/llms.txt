@@ -1,10 +1,10 @@
 # MsGamer — Paulina Lorné
 
-> Personal portfolio of Paulina Lorné (MsGamer), Nordic Marketing Manager at Bethesda Softworks. Lifelong gamer driving AAA launches across the Nordics — Fallout, Starfield, DOOM, The Elder Scrolls, and more. Based in Sweden.
+> Personal portfolio of Paulina Lorné (MsGamer), Marketing Manager in gaming and tech. Former Nordic Marketing Manager at Bethesda Softworks (2021–2026). Lifelong gamer who drove AAA launches across the Nordics — Fallout, Starfield, DOOM, The Elder Scrolls, and more. Based in Sweden.
 
 ## Pages
 
-- [Home](https://msgamer.se/): Overview of Paulina Lorné, her role at Bethesda, current focus areas, and gaming background.
+- [Home](https://msgamer.se/): Overview of Paulina Lorné, her career in gaming marketing, focus areas, and gaming background.
 - [About](https://msgamer.se/about): Personal background, gaming origin story, identity as a gamer-turned-marketer, and what drives her work.
 - [Career](https://msgamer.se/career): Full career timeline from indie booth builds to Nordic Marketing Manager. Includes roles at Thunderful, Tobii, Image & Form, and Bethesda.
 - [Events](https://msgamer.se/events): Industry events and appearances — Dreamhack, Gamescom, PAX East/West, E3, TwitchCon, EGX Rezzed, ID@Xbox, Retrospelsmässan.
@@ -14,8 +14,8 @@
 
 - Full name: Paulina Lorné
 - Online handle: MsGamer
-- Role: Nordic Marketing Manager
-- Employer: Bethesda Softworks (ZeniMax Media / Microsoft Gaming)
+- Role: Marketing Manager, Gaming & Tech
+- Most recent: Nordic Marketing Manager, Bethesda Softworks (ZeniMax Media / Microsoft Gaming), 2021–2026
 - Region: Nordics (Sweden, Denmark, Norway, Finland, Iceland)
 - LinkedIn: https://se.linkedin.com/in/paulinalorne
 - Bluesky: https://bsky.app/profile/msgamerse.bsky.social
